@@ -1,60 +1,61 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const AboutWrapper = styled.div`
-    height: 1000px;
-    background-color: #FBFBFB;
-
-    .about-container {
-        width: 925px;
-        margin: auto;
-    }
-`
-
-const WhatIDo = styled.div`
-    padding-top: 50px;
-
-    h1 {
-        margin-top: 0;
-    }
-
-    p {
-        width: 925px;
-        margin: auto;
-        line-height: 1.8;
-    }
-`
-
-const WhatIKnow = styled.div`
-    margin-top: 100px;
-
-    .content-wrapper {
-        width: 925px;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-
-        .section {
-            width: 250px;
-            margin-right: 25px;
-            margin-bottom: 25px;
-
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-
-                li {
-                    font-family: Roboto, sans-serif;
-                    font-weight: 300;
-                }
-            }
-        }
-    }
-`
-
 export default class About extends React.Component {
     render() {
+
+        const AboutWrapper = styled.div`
+            height: 1000px;
+            background-color: ${this.props.theme.lightGray};
+
+            .about-container {
+                width: 925px;
+                margin: auto;
+            }
+        `
+
+        const WhatIDo = styled.div`
+            padding-top: 50px;
+
+            h1 {
+                margin-top: 0;
+            }
+
+            p {
+                width: 925px;
+                margin: auto;
+                line-height: 1.8;
+            }
+        `
+
+        const WhatIKnow = styled.div`
+            margin-top: 100px;
+
+            .content-wrapper {
+                width: 925px;
+                margin: auto;
+                display: flex;
+                flex-wrap: wrap;
+
+                .section {
+                    width: 250px;
+                    margin-right: 25px;
+                    margin-bottom: 25px;
+
+                    ul {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+
+                        li {
+                            font-family: Roboto, sans-serif;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        `
+
         return (
             <AboutWrapper>
                 <div class="about-container">
