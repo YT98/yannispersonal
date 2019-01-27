@@ -8,7 +8,7 @@ const Header = styled.div`
     box-sizing: border-box;
     max-width: 100%;
     margin: auto;
-    background-color: #FBFBFB;
+    background-color: #F8F8F8;
 
     h1 {
         color: white;
@@ -60,8 +60,6 @@ export default class Home extends React.Component {
         return (
             <Header>
 
-                
-
                 <HeaderBackground viewBox="0 0 100 100" preserveAspectRatio="none">
                     <defs>
                         <linearGradient id="gradient" x1='0%' y1='0%' x2='100%' y2='100%'>
@@ -69,7 +67,7 @@ export default class Home extends React.Component {
                             <stop offset="100%" style={{ stopColor: '#6286DB', stopOpacity:1 }} />
                         </linearGradient>
                     </defs>
-                    <polygon fill="url(#gradient)" points='0,0 100,0 100,100 0,80' />
+                    <polygon fill="url(#gradient)" points='0,0 100,0 100,95 0,80' />
                 </HeaderBackground>
 
                 <ParticleWrapper>

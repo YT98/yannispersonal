@@ -5,8 +5,11 @@ export default class About extends React.Component {
     render() {
 
         const AboutWrapper = styled.div`
-            height: 1000px;
             background-color: ${this.props.theme.lightGray};
+
+            h1 {
+                color: ${this.props.theme.mainBlue}
+            }
 
             .about-container {
                 width: 925px;
@@ -16,6 +19,7 @@ export default class About extends React.Component {
 
         const WhatIDo = styled.div`
             padding-top: 50px;
+            padding-bottom: 50px;
 
             h1 {
                 margin-top: 0;
@@ -54,6 +58,10 @@ export default class About extends React.Component {
                     }
                 }
             }
+        `
+
+        const WorkEducation = styled.div`
+            margin-top: 100px;
         `
 
         return (
@@ -123,6 +131,11 @@ export default class About extends React.Component {
 
                         </div>
                     </WhatIKnow>
+
+                    <WorkEducation>
+                        <h1> Education </h1>
+                        <h1> Work experience</h1>
+                    </WorkEducation>
 
                 </div>
             </AboutWrapper>

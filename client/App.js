@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
 
     h2 {
         font-family: Roboto, sans-serif;
-        font-weight: 300;
+        font-weight: 400;
         line-height: 1.8;
     }
 
