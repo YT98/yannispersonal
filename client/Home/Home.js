@@ -3,9 +3,10 @@ import styled from 'styled-components';
 
 import Header from './Header';
 import AboutContainer from './AboutContainer';
+import Work from './Work';
 
 const StyledHome = styled.div`
-    padding: 25px;
+    // padding: 25px;
     margin: auto;
 `
 
@@ -15,6 +16,7 @@ export default class Home extends React.Component {
             <StyledHome>
                 <Header />
                 <AboutContainer />
+                <Work />
             </StyledHome>
         )
     }
