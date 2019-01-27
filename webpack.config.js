@@ -23,6 +23,14 @@ module.exports = {
             presets: ["@babel/env", "@babel/react"]
           }
         }
+      },
+      {
+        test: /\.(ped|jpg|png|gif|svg|ico)$/,
+        use: [
+          {
+            loader: 'url-loader'
+          }
+        ]
       }
     ]
   },
