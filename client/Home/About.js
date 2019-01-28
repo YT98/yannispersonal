@@ -218,7 +218,7 @@ export default class About extends React.Component {
                         <h1> Education </h1>
                         <div class="item">
                             <div class="date-title">
-                                <p class="date"> 2018/09 - Present </p>
+                                <p class="date"> 09/2018 - Present </p>
                                 <p class="title"> Université de Montréal </p>
                             </div>
                             <div class="description">
