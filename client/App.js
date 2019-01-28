@@ -26,6 +26,12 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 300;
     }
 
+
+    a {
+        font-family: Roboto, sans-serif;
+        text-decoration: none;
+    }
+
   }
 `
 
