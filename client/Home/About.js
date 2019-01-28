@@ -224,7 +224,7 @@ export default class About extends React.Component {
                             <div class="description">
                                 <ul>
                                     <li><p> Physics and Computer Science B.Sc. (starting Fall 2019) </p></li>
-                                    <li><p> Preparatory Year - Pure and Applied Sciences Specialization (Currently enrolled, GPA: 3.8) </p></li>
+                                    <li><p> Preparatory Year - Pure and Applied Sciences Specialization (currently enrolled, GPA: 3.8) </p></li>
                                 </ul>
                             </div>
                         </div>
