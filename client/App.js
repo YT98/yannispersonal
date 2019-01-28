@@ -1,7 +1,8 @@
 import React from 'react';
+import { createGlobalStyle } from 'styled-components';
 
+import deviceSizes from './deviceSizes';
 import Home from './Home/Home';
-import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -30,6 +31,12 @@ const GlobalStyle = createGlobalStyle`
     a {
         font-family: Roboto, sans-serif;
         text-decoration: none;
+    }
+
+    @media ${deviceSizes.mobileL} {
+        p {
+            font-size: 15px;
+        }
     }
 
   }

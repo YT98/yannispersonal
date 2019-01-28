@@ -80,23 +80,34 @@ const Header = styled.div`
     }
 
     @media ${deviceSizes.mobileL} {
+        padding: 25px 50px 25px 50px;
         .header-content-wrapper {
             .navigation-container {
                 width: 100%;
                 box-sizing: border-box;
                 padding: 0 25px 0 25px;
+                flex-wrap: wrap;
+                justify-content: center;
+                h1 {
+                    font-size: 20px;
+                    text-align: center;
+                    padding-bottom: 20px;
+                }
                 ul {
                     li {
                         display: block;
+                        text-align: center;
                         padding-bottom: 10px;
                     }
                 }
             }
             .intro-container {
+                margin-top: 50px;
                 h1 {
                     width: 100%;
                     box-sizing: border-box;
                     padding: 0 25px 0 25px;
+                    font-size: 20px;
                 }
             }
         }
@@ -113,6 +124,10 @@ const ParticleWrapper = styled.div`
     position: absolute;
     top: 0; left: 0;
     height: 100%; width: 100%;
+
+    @media ${deviceSizes.mobileL} {
+        display: none;
+    }
 `
 
 export default class Home extends React.Component {

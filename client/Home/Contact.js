@@ -81,6 +81,13 @@ const ContactWrapper = styled.div`
             }
         }
     }
+
+    @media ${deviceSizes.mobileM} {
+        width: 100%;
+        .container {
+            margin: 100px 0 0 0;
+        }
+    }
 `
 
 export default class Contact extends React.Component {

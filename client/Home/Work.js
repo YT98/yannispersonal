@@ -66,6 +66,9 @@ const Item = styled.div`
         box-sizing: border-box;
         padding: 100px 25px 0 25px;
         flex-wrap: wrap;
+        .description {
+            background-color: transparent;
+        }
         .image {
             width: 100%;
             height: auto;
@@ -113,7 +116,7 @@ export default class Work extends React.Component {
                         </div>
                     </Item>
                     <Item>
-                        <div class="description" style={{ backgroundColor: '#F8F8F8' }}>
+                        <div class="description">
                             <h2 style={{ color: '#125589' }} > Holiday Homes 7 </h2>
                             <p> Real Estate investment firm based in St-Marteen, a georgeous caribbean island. </p>
                             <a 

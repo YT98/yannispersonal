@@ -11,7 +11,7 @@ export default class About extends React.Component {
             background-color: ${this.props.theme.lightGray};
 
             h1 {
-                color: ${this.props.theme.mainBlue}
+                color: ${this.props.theme.mainBlue};
             }
 
             .about-container {
@@ -46,8 +46,16 @@ export default class About extends React.Component {
                 line-height: 1.8;
             }
 
-            @media ${deviceSizes.tablet} {
+            @media ${deviceSizes.mobileL} {
+                h1 {
+                    width: 250px;
+                    margin: auto;
+                }
                 p {
+                    width: 250px;
+                    padding-top: 25px;
+                    margin: auto;
+                    line-height: 1.8;
                 }
             }
         `
@@ -80,10 +88,28 @@ export default class About extends React.Component {
             }
 
             @media ${deviceSizes.tablet} {
+                h1 {
+                    width: 250px;
+                    margin: auto;
+                }
                 .content-wrapper {
                     .section {
                         width: 250px;
                         margin-right: 50px;
+                    }
+                }
+            }
+
+            @media ${deviceSizes.mobileL} {
+                .content-wrapper {
+                    justify-content: center;
+                    .section {
+                        margin-right: 0;
+                        ul {
+                            li {
+                                font-size: 15px;
+                            }
+                        }
                     }
                 }
             }
@@ -140,6 +166,37 @@ export default class About extends React.Component {
                     .description {
                         ul {
                             margin-left: 165px;
+                        }
+                    }
+                }
+            }
+            @media ${deviceSizes.mobileL} {
+                h1 {
+                    width: 250px;
+                    margin: auto;
+                }
+                .item {
+                    width: 250px;
+                    margin: auto;
+                    .date-title {
+                        flex-wrap: wrap;
+                        .date {
+                            flex-shrink: 0;
+                            padding-right: 15px;
+                            width: 100%;
+                        }
+                        .title {
+                            margin-top: 0;
+                        }
+                    }
+                    .description {
+                        ul {
+                            margin-left: 0;
+                            li {
+                                p {
+                                    padding-left: 10px;
+                                }
+                            }
                         }
                     }
                 }
