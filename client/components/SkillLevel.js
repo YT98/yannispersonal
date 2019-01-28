@@ -7,9 +7,11 @@ const SkillLevelWrapper = styled.div`
     display: inline-block;
     span {
         display: inline-block;
-        height: 10px; width: 10px;
-        border-radius: 50%;
+        // height: 10px; width: 10px;
+        height: 7px; width: 7px;
         margin: 0 5px 0 5px;
+        border-radius: 50%;
+        // margin: 0 5px 0 5px;
         background-color: #6286DB;
         opacity: 0.3;
     }

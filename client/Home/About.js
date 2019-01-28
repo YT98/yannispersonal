@@ -65,6 +65,7 @@ export default class About extends React.Component {
                         li {
                             font-family: Roboto, sans-serif;
                             font-weight: 300;
+                            padding-bottom: 5px;
                         }
                     }
                 }
