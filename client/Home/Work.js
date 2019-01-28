@@ -103,13 +103,13 @@ export default class Work extends React.Component {
                                 href="https://condosfabre.com/"
                                 target="_blank"
                                 style={{ color: '#7F9470'}}
-                                onMouseEnter={() => this.setState({ holidayHomes: true })}
-                                onMouseLeave={() => this.setState({ holidayHomes: false })} >
+                                onMouseEnter={() => this.setState({ condosFabre: true })}
+                                onMouseLeave={() => this.setState({ condosFabre: false })} >
                                 See it for yourself
                             </a>
                         </div>
                         <div class="image">
-                            <img src={condosFabreImage} className={this.state.holidayHomes ? "hovered" : ""}/>
+                            <img src={condosFabreImage} className={this.state.condosFabre ? "hovered" : ""}/>
                         </div>
                     </Item>
                     <Item>
