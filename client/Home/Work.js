@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import {holidayHomesImage} from '../../images/index.js';
+import {holidayHomesImage} from '../../images/index';
+import {condosFabreImage} from '../../images/index'
 
 const WorkWrapper = styled.div`
     .work-container {
@@ -46,39 +47,62 @@ const Item = styled.div`
             position: absolute;
             left: 50%; top: 50%;
             transform: translate(-50%, -50%);
-            -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-            -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-            -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-            -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: all 0.25s ease-in-out;
+        }
+        .hovered {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
         }
     }
 
 `
 
 export default class Work extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            condosFabre: false,
+            holidayHomes: false
+        }
+    }
+
     render() {
         return (
             <WorkWrapper>
                 <div class="work-container">
                     <Item>
-                        <div class="description" style={{ backgroundColor: '#F8F8F8' }}>
-                            <h2 > Holiday Homes 7 </h2>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                            <a href="#"> See it for yourself </a>
+                        <div class="description">
+                            <h2 style={{ color: '#7F9470' }}> Condos Fabre </h2>
+                            <p> Condominium project in Montreal's Plateau neighborhood. </p>
+                            <a
+                                href="https://condosfabre.com/"
+                                target="_blank"
+                                style={{ color: '#7F9470'}}
+                                onMouseEnter={() => this.setState({ holidayHomes: true })}
+                                onMouseLeave={() => this.setState({ holidayHomes: false })} >
+                                See it for yourself
+                            </a>
                         </div>
                         <div class="image">
-                            <img src={holidayHomesImage} />
+                            <img src={condosFabreImage} className={this.state.holidayHomes ? "hovered" : ""}/>
                         </div>
                     </Item>
                     <Item>
-                        <div class="description">
-                            <h2> Condos Fabre </h2>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                            <a href="#"> See it for yourself </a>
+                        <div class="description" style={{ backgroundColor: '#F8F8F8' }}>
+                            <h2 style={{ color: '#125589' }} > Holiday Homes 7 </h2>
+                            <p> Real Estate investment firm based in St-Marteen, a georgeous caribbean island. </p>
+                            <a 
+                                href="https://www.holidayhomes7.com/"
+                                target="_blank"
+                                style={{ color: '#125589' }}
+                                onMouseEnter={() => this.setState({holidayHomes: true})} 
+                                onMouseLeave={() => this.setState({holidayHomes: false})} > 
+                                See it for yourself 
+                            </a>
                         </div>
                         <div class="image">
-                            <img src={holidayHomesImage} />
+                            <img src={holidayHomesImage} className={this.state.holidayHomes ? "hovered" : ""}/>
                         </div>
                     </Item>
                 </div>
