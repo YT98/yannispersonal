@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import deviceSizes from '../deviceSizes';
 
 const ContactWrapper = styled.div`
     width: 925px;
@@ -25,6 +26,9 @@ const ContactWrapper = styled.div`
             p {
                 margin: 0;
                 padding-bottom: 25px;
+            }
+            .contact-intro {
+                text-align: center;
             }
             ul {
                 margin: 0; padding: 0;
@@ -52,6 +56,30 @@ const ContactWrapper = styled.div`
             }
         }
     }
+
+    @media ${deviceSizes.tablet} {
+        width: 600px;
+        background-color: #F8F8F8;
+
+        .container {
+            width: 100%;
+            flex-wrap: wrap;
+            img {
+                padding-top: 50px;
+            }
+            div {
+                .contact-intro {
+                }
+                ul {
+                    li {
+                        text-align: center;
+                        display: block;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
 `
 
 export default class Contact extends React.Component {
@@ -62,7 +90,8 @@ export default class Contact extends React.Component {
                     <img src="https://i.gifer.com/QqOi.gif"/>
                     <div>
                         <h2> TL; DR: </h2>
-                        <p> I'm awesome. <br/> Here's where you can contact me : </p>
+                        <p> I'm awesome. </p>
+                        <p class="contact-intro"> Here's where you can contact me : </p>
                         <ul>
                             <li><a href="https://www.linkedin.com/in/yannistarfa/" target="_blank"> <i class="fab fa-linkedin"></i> LinkedIn </a></li>
                             <li><a href="https://github.com/YT98" target="_blank"> <i class="fab fa-github-square"></i> GitHub </a></li>

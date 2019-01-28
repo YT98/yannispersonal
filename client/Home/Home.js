@@ -7,8 +7,6 @@ import Work from './Work';
 import Contact from './Contact';
 
 const StyledHome = styled.div`
-    // padding: 25px;
-    margin: auto;
 `
 
 export default class Home extends React.Component {

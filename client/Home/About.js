@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import deviceSizes from '../deviceSizes';
 
 import SkillLevel from '../components/SkillLevel';
 
@@ -17,6 +18,12 @@ export default class About extends React.Component {
                 width: 925px;
                 margin: auto;
             }
+
+            @media ${deviceSizes.tablet} {
+                .about-container {
+                    width: 600px;
+                }
+            }
         `
 
         const WhatIDo = styled.div`
@@ -27,9 +34,13 @@ export default class About extends React.Component {
             }
 
             p {
-                width: 925px;
-                margin: auto;
+                width: 100%;
                 line-height: 1.8;
+            }
+
+            @media ${deviceSizes.tablet} {
+                p {
+                }
             }
         `
 
@@ -37,8 +48,7 @@ export default class About extends React.Component {
             padding-top: 100px;
 
             .content-wrapper {
-                width: 925px;
-                margin: auto;
+                width: 100%;
                 display: flex;
                 flex-wrap: wrap;
 
@@ -59,6 +69,15 @@ export default class About extends React.Component {
                     }
                 }
             }
+
+            @media ${deviceSizes.tablet} {
+                .content-wrapper {
+                    .section {
+                        width: 250px;
+                        margin-right: 50px;
+                    }
+                }
+            }
         `
 
         const WorkEducation = styled.div`
@@ -67,7 +86,6 @@ export default class About extends React.Component {
                 padding-bottom: 25px;
                 .date-title {
                     display: flex;
-                    align-items: center;
                     p {
                         font-weight: 400;
                     }
@@ -84,7 +102,6 @@ export default class About extends React.Component {
                 }
                 .description {
                     ul {
-                        // list-style-type: none;
                         padding: 0;
                         margin-left: 265px;
                         li {
@@ -95,6 +112,25 @@ export default class About extends React.Component {
                                 padding-left: 20px;
                                 margin-top: 10px;
                             }
+                        }
+                    }
+                }
+            }
+            @media ${deviceSizes.tablet} {
+                .item {
+                    .date-title {
+                        p {
+                            font-size: 17px;
+                        }
+                        .date {
+                            width: 150px;
+                            padding-right: 25px;
+                            box-sizing: border-box;
+                        }
+                    }
+                    .description {
+                        ul {
+                            margin-left: 165px;
                         }
                     }
                 }

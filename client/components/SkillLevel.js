@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import deviceSizes from '../deviceSizes';
 
 const SkillLevelWrapper = styled.div`
     float: right;
@@ -15,6 +16,13 @@ const SkillLevelWrapper = styled.div`
     .active {
         background-color: #3366DB;
         opacity: 1;
+    }
+
+    @media ${deviceSizes.tablet} {
+        span {
+            height: 5px; width: 5px;
+            margin: 0 3px 0 3px;
+        }
     }
 `
 

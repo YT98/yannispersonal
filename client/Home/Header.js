@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Particles from 'react-particles-js';
+import deviceSizes from '../deviceSizes';
 
 const Header = styled.div`
     position: relative;
@@ -65,19 +66,18 @@ const Header = styled.div`
         }
     }
 
-`
-
-const MenuButton = styled.button`
-    position: absolute;
-    z-index: 0;
-    left: 0; top: 0;
-    border: none;
-    height: 50px; width: 50px;
-    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    @media ${deviceSizes.tablet} {
+        .header-content-wrapper {
+            .navigation-container {
+                width: 600px;
+            }
+            .intro-container {
+                h1 {
+                    width: 600px;
+                }
+            }
+        }
+    }
 `
 
 const HeaderBackground = styled.svg`
