@@ -151,14 +151,14 @@ export default class About extends React.Component {
                 <div class="about-container">
 
                     <WhatIDo>
-                        <h1> What I do </h1>
+                        <h1> About me </h1>
                         <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at auctor urna nunc id cursus. Egestas purus viverra accumsan in nisl nisi. Vitae turpis massa sed elementum tempus egestas sed. </p>
+                            <p> Hard-working developer with a flair for creating elegant and efficient solutions and a knack for rapidly learning new things. Self-taught full-stack web development and developed a number of single page web applications. Passionate about development, my objective is to keep developing my skills and advancing my career in my field of passion. </p>
                         </div>
                     </WhatIDo>
 
                     <WhatIKnow>
-                        <h1> What I know</h1>
+                        <h1> Skills </h1>
                         <div class="content-wrapper">
 
                             <div class="section">
