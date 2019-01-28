@@ -24,6 +24,14 @@ export default class About extends React.Component {
                     width: 600px;
                 }
             }
+
+            @media ${deviceSizes.mobileL} {
+                .about-container {
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding: 0 25px 0 25px;
+                }
+            }
         `
 
         const WhatIDo = styled.div`

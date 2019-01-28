@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {holidayHomesImage} from '../../images/index';
 import {condosFabreImage} from '../../images/index'
+import deviceSizes from '../deviceSizes';
 
 const WorkWrapper = styled.div`
     .work-container {
@@ -13,6 +14,11 @@ const WorkWrapper = styled.div`
         }
     }
 
+    @media ${deviceSizes.mobileL} {
+        .work-container {
+            width: 100%;
+        }
+    }
 `
 
 const Item = styled.div`
@@ -55,6 +61,24 @@ const Item = styled.div`
         }
     }
 
+    @media ${deviceSizes.mobileL} {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 100px 25px 0 25px;
+        flex-wrap: wrap;
+        .image {
+            width: 100%;
+            height: auto;
+            padding: 0 50px 0 50px;
+            box-sizing: border-box;
+            img {
+                position: static;
+                transform: none;
+                object-fit: contain;
+                width: 100%;
+            }
+        }
+    }
 `
 
 export default class Work extends React.Component {

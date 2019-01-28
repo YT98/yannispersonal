@@ -78,6 +78,29 @@ const Header = styled.div`
             }
         }
     }
+
+    @media ${deviceSizes.mobileL} {
+        .header-content-wrapper {
+            .navigation-container {
+                width: 100%;
+                box-sizing: border-box;
+                padding: 0 25px 0 25px;
+                ul {
+                    li {
+                        display: block;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+            .intro-container {
+                h1 {
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding: 0 25px 0 25px;
+                }
+            }
+        }
+    }
 `
 
 const HeaderBackground = styled.svg`
