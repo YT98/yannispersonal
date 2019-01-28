@@ -18,8 +18,7 @@ export default class About extends React.Component {
         `
 
         const WhatIDo = styled.div`
-            padding-top: 50px;
-            padding-bottom: 50px;
+            padding-top: 100px;
 
             h1 {
                 margin-top: 0;
@@ -33,7 +32,7 @@ export default class About extends React.Component {
         `
 
         const WhatIKnow = styled.div`
-            margin-top: 100px;
+            padding-top: 100px;
 
             .content-wrapper {
                 width: 925px;
@@ -61,7 +60,7 @@ export default class About extends React.Component {
         `
 
         const WorkEducation = styled.div`
-            margin-top: 100px;
+            padding-top: 100px;
         `
 
         return (
