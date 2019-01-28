@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import SkillLevel from '../components/SkillLevel';
+
 export default class About extends React.Component {
     render() {
 
@@ -41,8 +43,8 @@ export default class About extends React.Component {
                 flex-wrap: wrap;
 
                 .section {
-                    width: 250px;
-                    margin-right: 25px;
+                    width: 300px;
+                    margin-right: 100px;
                     margin-bottom: 25px;
 
                     ul {
@@ -117,50 +119,50 @@ export default class About extends React.Component {
                             <div class="section">
                                 <h2> Front-End </h2>
                                 <ul>
-                                    <li> React.js </li>
-                                    <li> HTML </li>
-                                    <li> CSS3, Sass, Less </li>
-                                    <li> jQuery </li>
+                                    <li> React.js <SkillLevel value={5} /> </li>
+                                    <li> HTML <SkillLevel value={5} /> </li>
+                                    <li> CSS3, Sass, Less <SkillLevel value={5} /> </li>
+                                    <li> jQuery <SkillLevel value={4} /> </li>
                                 </ul>
                             </div>
 
                             <div class="section">
                                 <h2> Back-End </h2>
                                 <ul>
-                                    <li> Node.js </li>
-                                    <li> ASP.NET </li>
-                                    <li> PHP </li>
-                                    <li> Django </li>
+                                    <li> Node.js <SkillLevel value={5} /> </li>
+                                    <li> ASP.NET <SkillLevel value={3} /> </li>
+                                    <li> PHP <SkillLevel value={1} /> </li>
+                                    <li> Django <SkillLevel value={1} /> </li>
                                 </ul>
                             </div>
 
                             <div class="section">
                                 <h2> Databases </h2>
                                 <ul>
-                                    <li> Document-oriented databases </li>
-                                    <li> SQL Databases </li>
-                                    <li> MongoDB </li>
-                                    <li> Microsoft SQL Server </li>
+                                    <li> Document-oriented <SkillLevel value={4} /> </li>
+                                    <li> SQL Databases <SkillLevel value={3} /> </li>
+                                    <li> MongoDB <SkillLevel value={4} /> </li>
+                                    <li> Microsoft SQL Server <SkillLevel value={3} /> </li>
                                 </ul>
                             </div>
 
                             <div class="section">
                                 <h2> Languages </h2>
                                 <ul>
-                                    <li> C# </li>
-                                    <li> Python </li>
-                                    <li> Javascript </li>
+                                    <li> C# <SkillLevel value={4} /> </li>
+                                    <li> Python <SkillLevel value={3} /> </li>
+                                    <li> Javascript <SkillLevel value={5} /> </li>
                                 </ul>
                             </div>
 
                             <div class="section">
                                 <h2> Misc. </h2>
                                 <ul>
-                                    <li> Git version control </li>
-                                    <li> Linux environment </li>
-                                    <li> AGILE approach to development </li>
-                                    <li> French </li>
-                                    <li> English </li>
+                                    <li> Git version control <SkillLevel value={4} /></li>
+                                    <li> Linux environment <SkillLevel value={4} /></li>
+                                    <li> AGILE <SkillLevel value={5} /></li>
+                                    <li> French <SkillLevel value={5} /></li>
+                                    <li> English <SkillLevel value={5} /></li>
                                 </ul>
                             </div>
 
