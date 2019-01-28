@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import {holidayHomesImage} from '../../images/index';
-import {condosFabreImage} from '../../images/index'
+import {holidayHomesImage} from '../images/index';
+import {condosFabreImage} from '../images/index'
 import deviceSizes from '../deviceSizes';
 
 const WorkWrapper = styled.div`
