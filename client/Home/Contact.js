@@ -12,7 +12,7 @@ const ContactWrapper = styled.div`
         margin: 100px 0 100px 0;
 
         img {
-            height: 234px;
+            height: 259px;
         }
 
         div {
