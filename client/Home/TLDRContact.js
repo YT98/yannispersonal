@@ -22,7 +22,6 @@ const ContactWrapper = styled.div`
             h2 {
                 margin: 0;
                 padding: 0;
-                text-align: center;
             }
             p {
                 margin: 0;
@@ -88,12 +87,15 @@ export default class Contact extends React.Component {
         return (
             <ContactWrapper>
                 <div class="container">
+                    <img src="https://i.gifer.com/QqOi.gif"/>
                     <div>
-                        <h2> Interested? </h2>
+                        <h2> TL; DR: </h2>
+                        <p> I'm awesome. </p>
                         <p class="contact-intro"> Here's where you can contact me : </p>
                         <ul>
-                            <li><a href="tel:+15145571144"> (514) 557-1144 </a></li>
-                            <li><a href="mailto:info@yannistarfa.com"> info@yannistarfa.com </a></li>
+                            <li><a href="https://www.linkedin.com/in/yannistarfa/" target="_blank"> <i class="fab fa-linkedin"></i> LinkedIn </a></li>
+                            <li><a href="https://github.com/YT98" target="_blank"> <i class="fab fa-github-square"></i> GitHub </a></li>
+                            <li><a href="mailto:info@yannistarfa.com" class="email"> info@yannistarfa.com </a></li>
                         </ul>
                     </div>
                 </div>
