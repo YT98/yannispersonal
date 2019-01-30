@@ -241,28 +241,28 @@ export default class About extends React.Component {
                             <div class="section">
                                 <h2> Databases </h2>
                                 <ul>
-                                    <li> Document-oriented <SkillLevel value={4} /> </li>
-                                    <li> SQL Databases <SkillLevel value={3} /> </li>
-                                    <li> MongoDB <SkillLevel value={4} /> </li>
-                                    <li> Microsoft SQL Server <SkillLevel value={3} /> </li>
+                                    <li> Document-oriented <SkillLevel value={3} /> </li>
+                                    <li> MongoDB <SkillLevel value={3} /> </li>
+                                    <li> SQL Databases <SkillLevel value={2} /> </li>
+                                    <li> Microsoft SQL Server <SkillLevel value={2} /> </li>
                                 </ul>
                             </div>
 
                             <div class="section">
                                 <h2> Languages </h2>
                                 <ul>
-                                    <li> C# <SkillLevel value={4} /> </li>
-                                    <li> Python <SkillLevel value={3} /> </li>
                                     <li> Javascript <SkillLevel value={5} /> </li>
+                                    <li> Python <SkillLevel value={4} /> </li>
+                                    <li> C# <SkillLevel value={3} /> </li>
                                 </ul>
                             </div>
 
                             <div class="section">
                                 <h2> Misc. </h2>
                                 <ul>
+                                    <li> AGILE <SkillLevel value={5} /></li>
                                     <li> Git version control <SkillLevel value={4} /></li>
                                     <li> Linux environment <SkillLevel value={4} /></li>
-                                    <li> AGILE <SkillLevel value={5} /></li>
                                     <li> French <SkillLevel value={5} /></li>
                                     <li> English <SkillLevel value={5} /></li>
                                 </ul>
