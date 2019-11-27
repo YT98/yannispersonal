@@ -280,8 +280,8 @@ export default class About extends React.Component {
                             </div>
                             <div class="description">
                                 <ul>
-                                    <li><p> Physics and Computer Science B.Sc. (starting Fall 2019) </p></li>
-                                    <li><p> Preparatory Year - Pure and Applied Sciences Specialization (currently enrolled, GPA: 3.9) </p></li>
+                                    <li><p> Physics and Computer Science B.Sc. (09/2019 - Present) </p></li>
+                                    <li><p> Preparatory Year - Pure and Applied Sciences Specialization (09/2018 - 05/2019, GPA: 4.0) </p></li>
                                 </ul>
                             </div>
                         </div>
@@ -310,6 +310,14 @@ export default class About extends React.Component {
                         </div>
 
                         <h1> Work experience</h1>
+                        <div class="item">
+                            <div class="date-title">
+                                <p class="date"> 05/2019 - 08/2019 </p>
+                                <p class="title"> Software Developer Intern <span>at</span> Nuance </p>
+                            </div>
+                            <div class="description">
+                            </div>
+                        </div>
                         <div class="item">
                             <div class="date-title">
                                 <p class="date"> 01/2017 - Present </p>
