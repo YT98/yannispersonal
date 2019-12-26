@@ -316,6 +316,16 @@ export default class About extends React.Component {
                                 <p class="title"> Software Developer Intern <span>at</span> Nuance </p>
                             </div>
                             <div class="description">
+                                <ul>
+                                    <li>Back-End Web Development (Java, Maven)</li>
+                                    <li>Continuous Integration and Development (Jenkins)</li>
+                                    <li>Followed an AGILE development protocol.</li>
+                                    <li>Worked alongside a team in charge of an application which acted as a bridge between Nuance's clients and its speech recognition services. </li>
+                                </ul>
+                                <ul>
+                                    <li>Put in charge of improving the CI/CD pipeline to assure constant code quality and to detect potential security flaws.</li>
+                                    <li>Reduced the number of bugs in the application from more than a 100 to less than 10.</li>
+                                </ul>
                             </div>
                         </div>
                         <div class="item">
