@@ -287,13 +287,25 @@ export default class About extends React.Component {
                         <h1> Education </h1>
                         <div class="item">
                             <div class="date-title">
-                                <p class="date"> 09/2018 - Present </p>
+                                <p class="date"> 09/2019 - Present </p>
                                 <p class="title"> Université de Montréal </p>
                             </div>
                             <div class="description">
                                 <ul>
-                                    <li><p> Physics and Computer Science B.Sc. (09/2019 - Present) </p></li>
-                                    <li><p> Preparatory Year - Pure and Applied Sciences Specialization (09/2018 - 05/2019, GPA: 4.0) </p></li>
+                                    <li><p> Physics and Computer Science B.Sc.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="date-title">
+                                <p class="date"> 09/2018 - 05/2019 </p>
+                                <p class="title"> Université de Montréal </p>
+                            </div>
+                            <div class="description">
+                                <ul>
+                                    <li><p> Preparatory Year - Pure and Applied Sciences Specialization</p></li>
+                                    <li><p> GPA: 4.0 </p></li>
+                                    <li><p> Dean's List - "Mention d'excellence" </p></li>
                                 </ul>
                             </div>
                         </div>
@@ -329,30 +341,20 @@ export default class About extends React.Component {
                             </div>
                             <div class="description">
                                 <ul>
-                                    <li>Back-End Web Development (Java, Maven)</li>
-                                    <li>Continuous Integration and Development (Jenkins)</li>
-                                    <li>Followed an AGILE development protocol.</li>
-                                    <li>Worked alongside a team in charge of an application which acted as a bridge between Nuance's clients and its speech recognition services. </li>
+                                    <li><p>Back-End Web Development (Java, Maven)</p></li>
+                                    <li><p>Continuous Integration/Delivery (Jenkins)</p></li>
+                                    <li><p>DevOps (Docker, Kubernetes)</p></li>
+                                    <li><p>AGILE development</p></li>
+                                    <li><p>Member of team in charge of an application which acted as a bridge between Nuance's clients and its speech recognition services. </p></li>
                                 </ul>
                                 <ul>
-                                    <li>Put in charge of improving the CI/CD pipeline to assure constant code quality and to detect potential security flaws.</li>
-                                    <li>Reduced the number of bugs in the application from more than a 100 to less than 10.</li>
+                                    <li><p>Improved the CI/CD pipeline to assure constant code quality and to detect potential security flaws.</p></li>
+                                    <li><p>Reduced the number of bugs in the application by more than 90%.</p></li>
                                 </ul>
                             </div>
                         </div>
+                        
                         <div class="item">
-                            <div class="date-title">
-                                <p class="date"> 01/2017 - Present </p>
-                                <p class="title"> Freelance Web Developer </p>
-                            </div>
-                            <div class="description">
-                                <ul>
-                                    <li><p> Full Stack Web Development (NGINX, Node.js, Express, MongoDB, React.js, HTML, CSS). </p></li>
-                                    <li><p> My role also included client prospection, defining the client's needs, preparing the work scope as well as client follow-up. </p></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item" style={{ paddingBottom: '100px' }}>
                             <div class="date-title">
                                 <p class="date"> 2018/01 - 2018/05 </p>
                                 <p class="title"> Junior Web Developer <span>at</span> Empty Cubicle </p>
@@ -360,13 +362,25 @@ export default class About extends React.Component {
                             <div class="description">
                                 <ul>
                                     <li><p> Full Stack Web Development (ASP.NET MVC, Azure, MicrosoftSQLServer, React.js, Redux.js, HTML, CSS). </p></li>
-                                    <li><p> Following an AGILE development approach. </p></li>
-                                    <li><p> Development of a smart resume verification system alongside artificial intelligence consultant agencies. </p></li>
-                                    <li><p> Worked on a number of essential features for the application, such as user registration and account preferences. </p></li>
+                                    <li><p> Collaborated with artificial intelligence consultant agencies to develop a smart resume verification system. </p></li>
+                                    <li><p> Developed essential features of the application, such as user registration and account preferences. </p></li>
                                 </ul>
                                 <ul>
-                                    <li><p> Put in charge of implementing React.js (coupled with Redux) as a project-wide front-end framework. Trained developers on the team on how to properly implement these technologies in their work flow. </p></li>
-                                    <li><p> Implemented REST API architectural pattern in a previously MVC-based (.cshtml Razor pages) project. </p></li>
+                                    <li><p> Implemented React.js (coupled with Redux) as a project-wide front-end framework. Trained developers on the team on how to properly implement these technologies in their workflow. </p></li>
+                                    <li><p> Implemented a REST architectural pattern in a previously MVC-based application. </p></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="item" style={{ paddingBottom: '100px' }}>
+                            <div class="date-title">
+                                <p class="date"> 2017 - 2019 </p>
+                                <p class="title"> Freelance Web Developer </p>
+                            </div>
+                            <div class="description">
+                                <ul>
+                                    <li><p> Full Stack Web Development (NGINX, Node.js, Express, MongoDB, React.js, HTML, CSS). </p></li>
+                                    <li><p> Client prospection, defining the client's needs, preparing the work scope and client follow-up. </p></li>
                                 </ul>
                             </div>
                         </div>
