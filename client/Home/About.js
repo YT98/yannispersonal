@@ -223,7 +223,7 @@ export default class About extends React.Component {
                                 <ul>
                                     <li> React.js <SkillLevel value={5} /> </li>
                                     <li> HTML <SkillLevel value={5} /> </li>
-                                    <li> CSS3, Sass, Less <SkillLevel value={5} /> </li>
+                                    <li> CSS, Sass, Less <SkillLevel value={5} /> </li>
                                     <li> jQuery <SkillLevel value={4} /> </li>
                                 </ul>
                             </div>
@@ -232,6 +232,7 @@ export default class About extends React.Component {
                                 <h2> Back-End </h2>
                                 <ul>
                                     <li> Node.js <SkillLevel value={5} /> </li>
+                                    
                                     <li> ASP.NET <SkillLevel value={3} /> </li>
                                     <li> PHP <SkillLevel value={1} /> </li>
                                     <li> Django <SkillLevel value={1} /> </li>
@@ -252,8 +253,19 @@ export default class About extends React.Component {
                                 <h2> Languages </h2>
                                 <ul>
                                     <li> Javascript <SkillLevel value={5} /> </li>
+                                    <li> Bash <SkillLevel value={5} /> </li>
                                     <li> Python <SkillLevel value={4} /> </li>
+                                    <li> Java <SkillLevel value={3} /> </li>
                                     <li> C# <SkillLevel value={3} /> </li>
+                                </ul>
+                            </div>
+
+                            <div class="section">
+                                <h2> DevOps </h2>
+                                <ul>
+                                    <li> Jenkins <SkillLevel value={5} /></li>
+                                    <li> Docker <SkillLevel value={2} /></li>
+                                    <li> Kubernetes <SkillLevel value={2} /></li>
                                 </ul>
                             </div>
 
