@@ -250,6 +250,15 @@ export default class About extends React.Component {
                             </div>
 
                             <div class="section">
+                                <h2> DevOps </h2>
+                                <ul>
+                                    <li> Jenkins <SkillLevel value={5} /></li>
+                                    <li> Docker <SkillLevel value={2} /></li>
+                                    <li> Kubernetes <SkillLevel value={2} /></li>
+                                </ul>
+                            </div>
+
+                            <div class="section">
                                 <h2> Languages </h2>
                                 <ul>
                                     <li> Javascript <SkillLevel value={5} /> </li>
@@ -257,15 +266,6 @@ export default class About extends React.Component {
                                     <li> Python <SkillLevel value={4} /> </li>
                                     <li> Java <SkillLevel value={3} /> </li>
                                     <li> C# <SkillLevel value={3} /> </li>
-                                </ul>
-                            </div>
-
-                            <div class="section">
-                                <h2> DevOps </h2>
-                                <ul>
-                                    <li> Jenkins <SkillLevel value={5} /></li>
-                                    <li> Docker <SkillLevel value={2} /></li>
-                                    <li> Kubernetes <SkillLevel value={2} /></li>
                                 </ul>
                             </div>
 
